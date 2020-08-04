@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAGA,AACI,MADE,CACF,SAAS,CAAC;EACN,gBAAgB,EAAE,yBAAyB;CAAG",
+    "mappings": "AAGA,AACI,MADE,CACF,SAAS,CAAC;EACN,gBAAgB,EAAE,0BAA0B;CAAG",
     "sources": [
         "small.sass"
     ],
