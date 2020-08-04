@@ -65,38 +65,6 @@ nav a, nav i {
   transition: color .3s;
 }
 
-nav .navbar-nav {
-  position: relative;
-}
-
-nav .navbar-nav .nav-item,
-nav .navbar-nav .nav-item, nav .navbar-nav ::after,
-nav .navbar-nav .nav-item, nav .navbar-nav ::before {
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-nav .navbar-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #fff;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-}
-
-nav .navbar-nav .nav-item, nav .navbar-nav :hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: right;
-          transform-origin: right;
-}
-
 nav i {
   padding: 10px;
 }
@@ -233,11 +201,12 @@ header .fa-chevron-down {
 
 #portfolio .card {
   cursor: pointer;
-  width: 420px;
+  width: 300px;
   height: 480px;
   border: none;
   background: none;
   text-align: center;
+  border-radius: 50px;
 }
 
 #portfolio .front, #portfolio .back {
@@ -271,6 +240,7 @@ header .fa-chevron-down {
 
 #portfolio .front .img-3f {
   background-image: url("../img/project3f.jpg");
+  background-position: top;
 }
 
 #portfolio .front .img-4f {
@@ -300,7 +270,7 @@ header .fa-chevron-down {
 
 #portfolio .bg h2 {
   color: #fff;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 45px;
   margin: 10px;
 }
@@ -321,7 +291,7 @@ header .fa-chevron-down {
 
 #portfolio .back-content .text {
   position: relative;
-  bottom: -10px;
+  bottom: -12px;
 }
 
 #portfolio .back-content .img {
@@ -486,6 +456,7 @@ header .fa-chevron-down {
 #contact .jumbotron h2 {
   color: #fff;
   font-weight: bold;
+  text-decoration: none;
 }
 
 #contact .jumbotron .underline {
@@ -516,9 +487,21 @@ header .fa-chevron-down {
 }
 
 #contact .jumbotron .contact-me h3 {
-  margiin-bottom: 15px;
+  margin-top: 25px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: #039dff;
+}
+
+#contact .jumbotron .contact-me a {
+  color: #fff;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+#contact .jumbotron .contact-me a:hover {
+  text-decoration: none;
+  color: #039dff;
 }
 
 #contact .jumbotron .contact-me .social-media {
@@ -532,6 +515,11 @@ header .fa-chevron-down {
   -webkit-transition: color .3s;
   transition: color .3s;
   cursor: pointer;
+  text-decoration: none;
+}
+
+#contact .jumbotron .contact-me .social-media p {
+  color: #fff;
 }
 
 #contact .jumbotron .contact-me .social-media .linkedin:hover {

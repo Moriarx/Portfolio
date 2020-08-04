@@ -56,33 +56,6 @@ nav
     a, i
         color: #fff
         transition: color .3s
-
-    // a:hover
-    //     color: $blue-color
-
-    .navbar-nav
-        position: relative
-
-        .nav-item,
-        .nav-item,::after,
-        .nav-item,::before
-            transition: .3s
-
-        a::after
-            content: ''
-            position: absolute
-            bottom: 0
-            left: 0
-            height: 2px
-            width: 100%
-            background-color: #fff
-            transform: scaleX(0)
-            transform-origin: left
-
-        .nav-item,:hover::after
-            transform: scaleX(1)
-            transform-origin: right
-
     i
         padding: 10px
 
@@ -228,11 +201,12 @@ header
 
     .card
         cursor: pointer
-        width: 420px
+        width: 300px
         height: 480px
         border: none
         background: none
         text-align: center
+        border-radius: 50px
 
 
     .front, .back
@@ -257,6 +231,7 @@ header
 
     .front .img-3f        
         background-image: url('../img/project3f.jpg')
+        background-position: top
 
     .front .img-4f 
         background-image: url('../img/project4f.jpg')     
@@ -275,7 +250,7 @@ header
 
         h2
             color: #fff
-            font-size: 28px
+            font-size: 24px
             line-height: 45px
             margin: 10px
 
@@ -293,7 +268,7 @@ header
         z-index: -3
         .text
             position: relative
-            bottom: -10px
+            bottom: -12px
         .img
             position: absolute
             width: 90%
@@ -309,6 +284,7 @@ header
             background-image: url('../img/project1.jpg')
         .img-3b
             background-image: url('../img/todolist.jpg')
+            
         .img-4b
             background-image: url('../img/barberb.jpg')
 
@@ -389,6 +365,8 @@ header
     .gitcolor, .gittxt
         color: #f34f29
 
+     
+
 //DEVELOPED TECHS
 
 @media (min-width: 375px)
@@ -430,6 +408,7 @@ header
         h2
             color: #fff
             font-weight: bold
+            text-decoration: none
 
 
         .underline
@@ -442,6 +421,7 @@ header
             top: 0
             background-color: rgba(0,9,27,.85)
             z-index: -10
+            
 
         .contact-me
             display: flex
@@ -452,9 +432,17 @@ header
                 margin: 100px 0
 
             h3
-                margiin-bottom: 15px
+                margin-top: 25px
                 text-transform: uppercase
                 letter-spacing: 2px
+                color: $blue-color
+            a
+                color:#fff      
+                transition: color .3s
+    
+            a:hover                 
+                text-decoration: none
+                color: $blue-color
 
             .social-media
                 font-size: 26px
@@ -465,7 +453,10 @@ header
                     text-shadow: 0 0 5px black
                     transition: color .3s
                     cursor: pointer
+                    text-decoration: none
 
+                p
+                    color: #fff                    
 
                 .linkedin:hover
                     color: #0e76a8

@@ -1,4 +1,9 @@
 header .hero-img {
   background-image: url("../img/headersd.jpg");
 }
+
+#portfolio .card {
+  width: 420px;
+  height: 480px;
+}
 /*# sourceMappingURL=small.css.map */

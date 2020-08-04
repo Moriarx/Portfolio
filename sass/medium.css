@@ -1,5 +1,5 @@
 header .hero-img {
-  background-image: url("./img/headersd.jpg");
+  background-image: url("../img/headersd.jpg");
 }
 
 header h1 {
@@ -8,5 +8,10 @@ header h1 {
 
 header .hero-text p {
   font-size: 20px;
+}
+
+#portfolio .card {
+  width: 420px;
+  height: 480px;
 }
 /*# sourceMappingURL=medium.css.map */

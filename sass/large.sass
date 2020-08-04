@@ -4,7 +4,7 @@
 header
     .hero-img
         background-image: url('../img/headerhd.jpg')
-        
+
 
         .fa-chevron-down
             display: block
@@ -17,27 +17,55 @@ header
             animation: bounce 1.8s infinite
 
 #technologies
-    .jscolor, .html5color, .css3color, .bscolor, .sasscolor, .gitcolor, 
+    .jscolor, .html5color, .css3color, .bscolor, .sasscolor, .gitcolor,
         color: #fff
 
     .jstxt, .html5txt, .css3txt, .bstxt, .sasstxt, .gittxt
-        color: #000            
+        color: #000
 
-
-    .jscolor:hover ~.jstxt, .jscolor:hover   
+    .jscolor:hover ~.jstxt, .jscolor:hover
         color: #f0db4f
 
     .html5color:hover ~.html5txt, .html5color:hover
         color: #e34c26
 
     .css3color:hover ~.css3txt, .css3color:hover
-        color: #2965f1           
+        color: #2965f1
 
     .bscolor:hover ~.bstxt, .bscolor:hover
         color: #563d7c
 
     .sasscolor:hover ~.sasstxt, .sasscolor:hover
-        color: #cc6699    
+        color: #cc6699
 
-    .gitcolor:hover ~.gittxt, .gitcolor:hover    
-        color: #f34f29    
+    .gitcolor:hover ~.gittxt, .gitcolor:hover
+        color: #f34f29
+
+#portfolio
+    .card
+        width: 420px
+        height: 480px
+        
+nav        
+    .navbar-nav
+        position: relative
+
+        .nav-item,
+        .nav-item,::after,
+        .nav-item,::before
+            transition: .3s
+
+        a::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            height: 2px
+            width: 100%
+            background-color: #fff
+            transform: scaleX(0)
+            transform-origin: left
+
+        .nav-item,:hover::after
+            transform: scaleX(1)
+            transform-origin: right

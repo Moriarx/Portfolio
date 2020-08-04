@@ -44,4 +44,41 @@ header .hero-img .fa-chevron-down {
 #technologies .gitcolor:hover ~ .gittxt, #technologies .gitcolor:hover {
   color: #f34f29;
 }
+
+#portfolio .card {
+  width: 420px;
+  height: 480px;
+}
+
+nav .navbar-nav {
+  position: relative;
+}
+
+nav .navbar-nav .nav-item,
+nav .navbar-nav .nav-item, nav .navbar-nav ::after,
+nav .navbar-nav .nav-item, nav .navbar-nav ::before {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+nav .navbar-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+nav .navbar-nav .nav-item, nav .navbar-nav :hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
 /*# sourceMappingURL=large.css.map */
