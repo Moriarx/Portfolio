@@ -1,5 +1,5 @@
 header .hero-img {
-  background-image: url("/Kurs cz 2/Portfolio/img/headerhd.jpg");
+  background-image: url("./img/headerhd.jpg");
 }
 
 header .hero-img .fa-chevron-down {
