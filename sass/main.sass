@@ -1,0 +1,483 @@
+$blue-color: #039dff
+
+*, *::after, *::before
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+
+html
+    scroll-behavior: smooth
+
+body
+    position: relative
+    font-family: 'Montserrat', sans-serif;
+
+
+//GENERAL STYLES
+.blue-text
+    color: $blue-color
+
+.wrapper
+    max-width: 2560px
+    width: 80%
+    margin: 0 auto
+
+h2
+    text-transform: uppercase
+    text-align: center
+
+.underline
+    margin: 0 auto 40px
+    width: 120px
+    height: 4px
+    background-color: $blue-color
+
+.scroll-fix::before
+    content: ""
+    display: block
+    height: 66px
+    margin-top: -66px
+
+.visibility
+    visibility: hidden
+
+.jumbotron
+    margin: 0
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%)
+    background-attachment: fixed
+
+// NAWIGACJA
+nav
+
+    text-transform: uppercase
+    transition: background-color .6s linear
+
+    a, i
+        color: #fff
+        transition: color .3s
+
+    // a:hover
+    //     color: $blue-color
+
+    .navbar-nav
+        position: relative
+
+        .nav-item,
+        .nav-item,::after,
+        .nav-item,::before
+            transition: .3s
+
+        a::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            height: 2px
+            width: 100%
+            background-color: #fff
+            transform: scaleX(0)
+            transform-origin: left
+
+        .nav-item,:hover::after
+            transform: scaleX(1)
+            transform-origin: right
+
+    i
+        padding: 10px
+
+    .navbar-brand
+        font-weight: bold
+
+    .active
+        color: $blue-color
+
+.shadow-bg
+    background-color: rgba(0,0,0, .8)
+
+//HEADER
+
+header
+    color: #fff
+    overflow: hidden
+
+    h1
+        padding: 10px
+        text-transform: uppercase
+        font-size: 30px
+
+
+    .hero-img
+        position: relative
+        height: 100vh
+        background-image: url('/Kurs cz 2/Portfolio/img/headerhd.jpg')
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        z-index: 0
+
+    .hero-bg
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0, .65)
+        z-index: -10
+
+    .hero-text
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        height: 100%
+        text-align: center
+
+        p
+            padding: 10px
+            font-size: 14px
+
+    .fa-chevron-down
+        display: none
+
+//MAIN ABOUT
+#aboutme
+    i
+        font-size: 30px
+        margin-top: 20px
+
+    h3
+        font-size: 18px
+        text-transform: uppercase
+
+    p
+        font-size: 14px
+
+    .aboutme-hover
+        visibility: hidden
+        transition: color .3s
+
+    .aboutme-hover:hover
+        color: $blue-color
+
+.react
+    color: #61dbfb
+
+.angular
+    color: #fc6c5c
+
+.vuejs
+    color: #42b883
+
+
+// #aboutme-hero
+//     color: #eee
+//     overflow: hidden
+
+//     .jumbotron
+//         position: relative
+//         padding: 50px 0
+//         background-image: url('/Kurs cz 2/Portfolio/img/digit.jpg')
+//         background-position: center
+//         background-size: cover
+//         z-index: 0
+
+//     .about-shadow
+//         position: absolute
+//         top: 0
+//         width: 100%
+//         height: 100%
+//         background-color: rgba(0,0,0, .65)
+//         z-index: -5
+
+//     h2
+//         font-size: 32px
+
+//     i
+//         font-size: 40px
+//         margin-top: 30px
+
+//     h3
+//         text-transform: uppercase
+//         font-size: 24px
+
+//     .aboutme-item
+//         visibility: hidden
+//         margin: 10px 0
+
+//MAIN PORTFOLIO
+#portfolio
+
+    .wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-evenly
+        align-items: space-evenely
+        gap: 40px
+        width: 100%
+        height: 100%
+        margin-top: 80px
+
+
+    .middle
+        position: relative
+        border: 2px solid black
+        width: 20%
+        height: 480px
+        border-radius: 50px
+
+
+
+    .card
+        cursor: pointer
+        width: 420px
+        height: 480px
+        border: none
+        background: none
+        text-align: center
+
+
+    .front, .back
+        width: 100%
+        height: 100%
+        overflow: hidden
+        backface-visibility: hidden
+        position: absolute
+        transition: transform .6s linear
+        border-radius: 50px
+
+    .front .img
+        height: 100%
+        background-size: cover
+        background-position: center
+        border-radius: 50px
+    .front .img-1f
+        background-image: url('../img/portfolio.png')
+
+    .front .img-2f 
+        background-image: url('../img/passgen.jpg')
+
+    .front .img-3f        
+        background-image: url('../img/project3f.jpg')
+
+    .front .img-4f 
+        background-image: url('../img/project4f.jpg')     
+       
+    .front
+        transform: perspective(600px) rotateY(0deg)
+
+    .bg
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0, 0.75)
+        border-radius: 50px 50px 0 0
+
+        h2
+            color: #fff
+            font-size: 28px
+            line-height: 45px
+            margin: 10px
+
+
+
+    .back
+        transform: perspective(600px) rotateY(180deg)
+        
+    .back-content
+        position: relative
+        color: #1a242e
+        text-align: center
+        width: 100%
+        background-color: #fff
+        z-index: -3
+        .text
+            position: relative
+            bottom: -10px
+        .img
+            position: absolute
+            width: 90%
+            height: 60%
+            top: 20%
+            left: calc(50% - 45%)
+            z-index: -2
+            background-size: cover
+            background-position: center
+        .img-1b
+            background-image: url('../img/jdsol.jpg')
+        .img-2b
+            background-image: url('../img/project1.jpg')
+        .img-3b
+            background-image: url('../img/todolist.jpg')
+        .img-4b
+            background-image: url('../img/barberb.jpg')
+
+                  
+
+
+    .sm
+        position: absolute
+        top: 90%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+
+    .sm a
+        display: inline-flex
+        width: 50px
+        height: 0px
+        justify-content: center
+        align-items: center
+        color: #2e2e2e
+        font-size: 30px
+        margin: 10px
+        padding: 20px
+        transition: color .4s, background .4s
+        border-radius: 50%
+
+        i
+            padding: 15px
+
+    .sm a:hover
+        background: #2c3e50
+        color: white
+
+    .card:hover > .front
+        transform: perspective(600px) rotateY(-180deg)
+    .card:hover > .back
+        transform: perspective(600px) rotateY(0deg)
+
+
+//MAIN TECHNOLOGIES
+#technologies
+    .tech-list
+        padding: 20px 0
+
+    .tech
+        text-align: center
+
+    i
+        font-size: 46px
+        margin-top: 20px
+        padding: 10px
+        color: #fff
+        text-shadow: 0 0 10px black
+        transition: color .4s
+
+    .tech-text
+        font-size: 18px
+        text-transform: uppercase
+        transition: color .4s
+
+
+
+    .jscolor, .jstxt
+        color: #f0db4f
+
+    .html5color, .html5txt
+        color: #e34c26
+
+    .css3color, .css3txt
+        color: #2965f1
+
+    .bscolor, .bstxt
+        color: #563d7c
+
+    .sasscolor, .sasstxt
+        color: #cc6699
+
+    .gitcolor, .gittxt
+        color: #f34f29
+
+//DEVELOPED TECHS
+
+@media (min-width: 375px)
+    header
+        h1
+            font-size: 36px
+
+        .hero-text
+            p
+                font-size: 16px
+
+    #aboutme-hero
+        i
+            font-size: 46px
+            margin-top: 30px
+
+        h3
+            text-transform: uppercase
+            font-size: 28px
+        h2
+            font-size: 36px
+
+
+@media (min-width: 414px)
+    #aboutus-hero
+        .jumbotron
+            padding: 80px 0
+
+//contact
+#contact
+    .jumbotron
+        position: relative
+        background-image: url('/Kurs cz 2/Portfolio/img/contact.jpg')
+        background-position: top
+        background-attachment: fixed
+        background-size: cover
+        z-index: 0
+
+        h2
+            color: #fff
+            font-weight: bold
+
+
+        .underline
+            background-color: #ccc
+
+        .contact-shadow
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            background-color: rgba(0,9,27,.85)
+            z-index: -10
+
+        .contact-me
+            display: flex
+            align-items: center
+            color: #fff
+
+            .contacts
+                margin: 100px 0
+
+            h3
+                margiin-bottom: 15px
+                text-transform: uppercase
+                letter-spacing: 2px
+
+            .social-media
+                font-size: 26px
+
+                a
+                    padding: 10px
+                    color: #fff
+                    text-shadow: 0 0 5px black
+                    transition: color .3s
+                    cursor: pointer
+
+
+                .linkedin:hover
+                    color: #0e76a8
+                .github:hover
+                    color: #f34f29
+//FOOTER
+footer
+    background-color: #ffffff
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%)
+    color: black
+
+    p
+        padding: 15px
+        text-align: center
+        margin-bottom: 0

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AACI,MADE,CACF,SAAS,CAAC;EACN,gBAAgB,EAAE,4CAA4C;CAAG",
+    "sources": [
+        "small.sass"
+    ],
+    "names": [],
+    "file": "small.css"
+}

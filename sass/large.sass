@@ -1,0 +1,43 @@
+// Large devices (desktops, 992px and up)
+
+//HEADER
+header
+    .hero-img
+        background-image: url('/Kurs cz 2/Portfolio/img/headerhd.jpg')
+        
+
+        .fa-chevron-down
+            display: block
+            position: absolute
+            bottom: 20px
+            left: calc(100% - 50.5%)
+            // transform: translateX(-50%)
+            font-size: 30px
+            color: #fff
+            animation: bounce 1.8s infinite
+
+#technologies
+    .jscolor, .html5color, .css3color, .bscolor, .sasscolor, .gitcolor, 
+        color: #fff
+
+    .jstxt, .html5txt, .css3txt, .bstxt, .sasstxt, .gittxt
+        color: #000            
+
+
+    .jscolor:hover ~.jstxt, .jscolor:hover   
+        color: #f0db4f
+
+    .html5color:hover ~.html5txt, .html5color:hover
+        color: #e34c26
+
+    .css3color:hover ~.css3txt, .css3color:hover
+        color: #2965f1           
+
+    .bscolor:hover ~.bstxt, .bscolor:hover
+        color: #563d7c
+
+    .sasscolor:hover ~.sasstxt, .sasscolor:hover
+        color: #cc6699    
+
+    .gitcolor:hover ~.gittxt, .gitcolor:hover    
+        color: #f34f29    
