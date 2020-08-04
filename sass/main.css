@@ -127,7 +127,7 @@ header h1 {
 header .hero-img {
   position: relative;
   height: 100vh;
-  background-image: url("/Kurs cz 2/Portfolio/img/headerhd.jpg");
+  background-image: url("./img/headerhd.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -476,7 +476,7 @@ header .fa-chevron-down {
 
 #contact .jumbotron {
   position: relative;
-  background-image: url("/Kurs cz 2/Portfolio/img/contact.jpg");
+  background-image: url("./img/contact.jpg");
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
